@@ -16,7 +16,7 @@ export interface StakePoolAccount {
 export interface WithdrawAccount {
     stakeAddress: PublicKey;
     voteAddress?: PublicKey;
-    poolAmount: number;
+    poolAmount: BN;
 }
 /**
  * Wrapper class for a stake pool.
@@ -137,7 +137,7 @@ export declare function stakePoolInfo(connection: Connection, stakePoolAddress: 
     totalLamports: string;
     poolTokenSupply: string;
     lastUpdateEpoch: string;
-    lockup: import("@solana/web3.js").Lockup;
+    lockup: import("./layouts").Lockup;
     epochFee: import("./layouts").Fee;
     nextEpochFee: import("./layouts").Fee | undefined;
     preferredDepositValidatorVoteAddress: PublicKey | undefined;

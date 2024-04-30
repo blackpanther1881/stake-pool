@@ -1,4 +1,4 @@
-import { Lockup, PublicKey } from '@solana/web3.js';
+import { PublicKey } from '@solana/web3.js';
 import BN from 'bn.js';
 import { Infer } from 'superstruct';
 export interface Fee {
@@ -246,6 +246,11 @@ export declare const StakeAccount: import("superstruct").Struct<{
         }>;
     }>;
 }>;
+export interface Lockup {
+    unixTimestamp: BN;
+    epoch: BN;
+    custodian: PublicKey;
+}
 export interface StakePool {
     accountType: AccountType;
     manager: PublicKey;
