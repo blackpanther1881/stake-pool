@@ -55,7 +55,7 @@ const METADATA_MAX_NAME_LENGTH = 32;
 const METADATA_MAX_SYMBOL_LENGTH = 10;
 const METADATA_MAX_URI_LENGTH = 200;
 // Public key that identifies the SPL Stake Pool program.
-const STAKE_POOL_PROGRAM_ID = new web3_js.PublicKey('SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy');
+const STAKE_POOL_PROGRAM_ID = new web3_js.PublicKey('DdwukiQQ5zyvQPHcbsBDFGvSWgXDJz38rbXqESSLGNpH');
 // Maximum number of validators to update during UpdateValidatorListBalance.
 const MAX_VALIDATORS_TO_UPDATE = 5;
 // Seed for ephemeral stake account
