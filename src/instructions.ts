@@ -17,8 +17,10 @@ import {
   METADATA_MAX_SYMBOL_LENGTH,
   METADATA_MAX_URI_LENGTH,
   METADATA_PROGRAM_ID,
-  STAKE_POOL_PROGRAM_ID,
 } from './constants';
+
+
+export const STAKE_POOL_PROGRAM_ID = new PublicKey('DdwukiQQ5zyvQPHcbsBDFGvSWgXDJz38rbXqESSLGNpH');
 
 /**
  * An enumeration of valid StakePoolInstructionType's
@@ -883,6 +885,7 @@ export class StakePoolInstruction {
       });
     }
 
+    console.log(STAKE_POOL_PROGRAM_ID, 'STAKE_POOL_PROGRAM_ID');
     return new TransactionInstruction({
       programId: STAKE_POOL_PROGRAM_ID,
       keys,

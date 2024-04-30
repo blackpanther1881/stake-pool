@@ -2,6 +2,7 @@ import { PublicKey, TransactionInstruction } from '@solana/web3.js';
 import * as BufferLayout from '@solana/buffer-layout';
 import { InstructionType } from './utils';
 import BN from 'bn.js';
+export declare const STAKE_POOL_PROGRAM_ID: PublicKey;
 /**
  * An enumeration of valid StakePoolInstructionType's
  */
