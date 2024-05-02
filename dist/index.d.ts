@@ -5,6 +5,7 @@ import BN from 'bn.js';
 export type { StakePool, AccountType, ValidatorList, ValidatorStakeInfo } from './layouts';
 export { STAKE_POOL_PROGRAM_ID } from './constants';
 export * from './instructions';
+export * from './utils';
 export interface ValidatorListAccount {
     pubkey: PublicKey;
     account: AccountInfo<ValidatorList>;

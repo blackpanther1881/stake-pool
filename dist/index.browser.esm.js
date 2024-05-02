@@ -2210,5 +2210,5 @@ async function updatePoolTokenMetadata(connection, stakePoolAddress, name, symbo
     };
 }
 
-export { STAKE_POOL_INSTRUCTION_LAYOUTS, STAKE_POOL_PROGRAM_ID$1 as STAKE_POOL_PROGRAM_ID, StakePoolInstruction, addValidatorToPool, createPoolTokenMetadata, decreaseValidatorStake, depositSol, depositStake, getStakeAccount, getStakePoolAccount, getStakePoolAccounts, increaseValidatorStake, redelegate, removeValidatorFromPool, stakePoolInfo, tokenMetadataLayout, updatePoolTokenMetadata, updateStakePool, withdrawSol, withdrawStake };
+export { STAKE_POOL_INSTRUCTION_LAYOUTS, STAKE_POOL_PROGRAM_ID$1 as STAKE_POOL_PROGRAM_ID, StakePoolInstruction, addValidatorToPool, arrayChunk, calcLamportsWithdrawAmount, calcPoolTokensForDeposit, createPoolTokenMetadata, decodeData, decreaseValidatorStake, depositSol, depositStake, encodeData, findEphemeralStakeProgramAddress, findMetadataAddress, findStakeProgramAddress, findTransientStakeProgramAddress, findWithdrawAuthorityProgramAddress, getStakeAccount, getStakePoolAccount, getStakePoolAccounts, getValidatorListAccount, increaseValidatorStake, lamportsToSol, newStakeAccount, prepareWithdrawAccounts, redelegate, removeValidatorFromPool, solToLamports, stakePoolInfo, tokenMetadataLayout, updatePoolTokenMetadata, updateStakePool, withdrawSol, withdrawStake };
 //# sourceMappingURL=index.browser.esm.js.map
